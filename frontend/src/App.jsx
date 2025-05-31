@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Terms from './pages/Terms';
@@ -11,10 +11,9 @@ const App = () => {
             <div>
                 <Navbar />
                 <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/terms" element={<Terms />} />
-                    <Route path="/privacy" element={<Privacy />} />
-
+                    <Route exact path="/" component={Home} />
+                    <Route path="/terms" component={Terms} />
+                    <Route path="/privacy" component={Privacy} />
                 </Switch>
             </div>
         </Router>
