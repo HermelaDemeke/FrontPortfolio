@@ -39,6 +39,7 @@ const Home = () => {
         e.preventDefault();
         setSending(true);
         setSent(false);
+        {/*
         try {
             const res = await fetch('http://localhost:5000/api/contact', {
                 method: 'POST',
@@ -49,6 +50,7 @@ const Home = () => {
         } catch (err) {
             alert('Failed to send message.');
         }
+           */ }
         setSending(false);
     };
 
@@ -262,7 +264,7 @@ const Home = () => {
                                 Why Hire <span className="highlight"> Hermela Demeke?</span>
                             </h2>
                             <p className="whyhireme-desc">
-                                I specialize in creating impactful digital solutions across multiple domains: **Web Development**, **Logo Design**, **Mobile App Development**, and **UI/UX Design**. My academic rigor, combined with hands-on project experience, makes me a valuable asset for innovative tech teams.
+                                I specialize in creating impactful digital solutions across multiple domains: Web Development, Logo Design, Mobile App Development, and UI/UX Design. My academic rigor, combined with hands-on project experience, makes me a valuable asset for innovative tech teams.
                             </p>
                             <div className="whyhireme-stats">
 
@@ -295,7 +297,7 @@ const Home = () => {
                         My Work <span className="highlight">Skills</span>
                     </h2>
                     <p className="workskills-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        this section showcases my technical skills and expertise in various areas of web development and design. Each skill is represented with a proficiency percentage, reflecting my commitment to quality and continuous improvement.
                     </p>
                     <div className="workskills-grid">
                         <div className="workskill-card">
